@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+div {
+    width: auto;
+    max-height: 400px;
+    background-color: grey;
+    padding: 50px;
+    display: inline-block;
+    font-family: fantasy;
+}
+.item1 { 
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;}
+.item2 { 
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;}
+.item3 { 
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    background-color: azure;}
+.item4 { 
+    grid-area: right;
+    display: flex;
+    justify-content: center;
+    background-color: tomato;}
+.item5 { 
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: darksalmon;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+        gap: 10px;
+        background-color: #2196f3;
+        padding: 10px;
+}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WRI</title>
+    <style>
+        div {
+            width: auto;
+            max-height: 400px;
+            background-color: grey;
+            padding: 50px;
+            display: inline-block;
+        }
+        .item1 { 
+            grid-area: header;
+            display: flex;
+            justify-content: center;
+            background-color: blueviolet;}
+        .item2 { 
+            grid-area: menu;
+            display: flex;
+            justify-content: center;
+            background-color: aqua;}
+        .item3 { 
+            grid-area: main;
+            display: flex;
+            justify-content: center;
+            background-color: azure;}
+        .item4 { 
+            grid-area: right;
+            display: flex;
+            justify-content: center;
+            background-color: tomato;}
+        .item5 { 
+            grid-area: footer;
+            display: flex;
+            justify-content: center;
+            background-color: darksalmon;}
+        
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+                'header header header header header header'
+                'menu main main main right right'
+                'menu footer footer footer footer footer';
+                gap: 10px;
+                background-color: #2196f3;
+                padding: 10px;
+        }
+        .item1:hover {background-color: antiquewhite;}
+        .item2:hover {background-color: antiquewhite;}
+        .item3:hover {background-color: antiquewhite;}
+        .item4:hover {background-color: antiquewhite;}
+        .item5:hover {background-color: antiquewhite;}   
+
+        </style>
+        
+</head>
+<body>
+    <section class = "grid-container">
+        <div class = "item1">header</div>
+        <div class = "item2">menu</div>
+        <div class = "item3">main</div>
+        <div class = "item4">right</div>
+        <div class = "item5">footer</div>
+    </section>
+
+</body>
+</html>
